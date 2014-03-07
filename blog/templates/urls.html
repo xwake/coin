@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+  {% block content %}
+  {% for url in urls %}
+	<li><a href="{{url.link}}">{{url.title}}</a>
+  {% endfor %}
+  {% endblock %}

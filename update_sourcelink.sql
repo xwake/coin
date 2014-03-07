@@ -1,0 +1,1 @@
+update blog_sourcelink set status = 0 where id = 3
