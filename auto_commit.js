@@ -19,7 +19,7 @@ const execCMD = function(cmd){
 
 
 function scheduleExecute(){
-    schedule.scheduleJob('0/5 * * * * *', function(){
+    schedule.scheduleJob('0 */5 * * * *', function(){
         console.log('scheduleExecute: ' + new Date());
 		execCMD(cmd);
     }); 
@@ -31,8 +31,22 @@ scheduleExecute();
 
 /*
 https://zj-john.github.io/projects/cjfcgrwnu008pa8f0jy7s6s3j.html
-http://cron.qqe2.com/ 
-http://www.cnblogs.com/zhongweiv/p/node_schedule.html
+
+
+
+node-schedule
+	https://www.jianshu.com/p/f787593071e1
+	http://www.cnblogs.com/zhongweiv/p/node_schedule.html
+	http://cron.qqe2.com/ 
+	http://wiki.jikexueyuan.com/project/nodejs-guide/module-path.html 路径
+
+LINUX
+export NODE_PATH=/usr/local/lib/node_modules/  
+
+WINDOWS
+环境变量 NODE_PATH = /DIR/node_modules
+
+
 */
 
 
