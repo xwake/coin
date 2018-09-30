@@ -1,0 +1,53 @@
+
+
+
+
+<html>
+<head>
+    <title>每月新增交易对</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="lib/RGraph/RGraph.common.core.js"></script>
+    <script type="text/javascript" src="lib/RGraph/RGraph.bar.js"></script>
+</head>
+
+
+<body>
+<em>来源：Binance.com</em><br><br>
+
+<canvas id="cvs" width="1000" height="550">
+    [No canvas support]
+</canvas>
+
+
+</body>
+
+<script>
+    window.onload = function ()
+    {
+        var line = new RGraph.Bar({
+            id: 'cvs',
+            data: [8,13,27,35,90,57,17,24,24,10,31,30,19,5,3,]            ,
+            options: {
+
+                labels: ['07','08','09','10','11','12','2018','02','03','04','05','06','07','08','09',],
+                textAngle: 0,
+                labelsOffsety: 10,
+                labelsOffsetx: 0,
+                colors: ['blue'],
+                gutterLeft: 35,
+                gutterRight: 35,
+                gutterBottom: 35,
+                textAccessible: true,
+                title: '每月新增交易对统计',
+                labelsAbove: true,
+                labelsAboveBorder: false,
+                labelsAboveOffsetx: 300,
+                labelsAboveOffsety: 10
+
+            }
+        }).draw();
+    };
+</script>
+
+</html>
+<br><br><br><br>刷新时间：2018-09-30 12:24:52
