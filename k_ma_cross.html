@@ -15,20 +15,21 @@
     <tr>
       <th>OpenTime</th>
       <th>Symbol</th>
-      <th>ITV</th>
-      <th>Pos%</th>
+      <!--<th>ITV</th>-->
+      <th title="Close_Low_Ratio">CL%</th>
+      <th title="High_Low_Ratio">HL%</th>
       <th>High30</th>
 
       <th>Low30</th>
       <th>Close</th>
       <th>%</th>
       <th>Volume</th>
-      <th>CM5</th>
-      <th>CM10</th>
-      <th>CM20</th>
-      <th>M510</th>
-      <th>M520</th>
-      <th>M560</th>
+      <th title="close > ma5">CM5</th>
+      <th title="close > ma10">CM10</th>
+      <th title="close > ma20">CM20</th>
+      <th title="ma5 > 10">M510</th>
+      <th title="ma5 > 20">M520</th>
+      <th title="ma5 > 60">M560</th>
     </tr>
     </thead>
     <tbody>
@@ -42,8 +43,9 @@
               columns: [
                   {data: 'open_time'},
                   {data: 'symbol'},
-                  {data: 'interv'},
-                  {data: 'position'},
+                  //{data: 'interv'},
+                  {data: 'close_low_perc'},
+                  {data: 'high_low_perc'},
                   {data: 'r30high'},
 
                   {data: 'r30low'},
@@ -82,4 +84,4 @@
                                              style="border-width:0" /></a></noscript>
   </body>
 </html>
-<br><br><br><br>Update Time：2018-10-03 00:10:07
+<br><br><br><br>Update Time：2018-10-03 00:28:15
