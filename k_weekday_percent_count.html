@@ -41,7 +41,7 @@
   <script>
       $(document).ready( function () {
           $('#table_id').DataTable({
-              data: [{"perc3n":809,"perc0":2304,"perc3":707,"perc5":716,"perc10":496,"perc0n":2412,"weekday":"1","weekday_showname":"星期天","perc5n":864,"perc10n":234},{"perc3n":1194,"perc0":1529,"perc3":598,"perc5":711,"perc10":518,"perc0n":2200,"weekday":"2","weekday_showname":"星期一","perc5n":1262,"perc10n":515},{"perc3n":931,"perc0":1783,"perc3":636,"perc5":718,"perc10":485,"perc0n":2215,"weekday":"3","weekday_showname":"星期二","perc5n":1303,"perc10n":502},{"perc3n":1024,"perc0":1792,"perc3":657,"perc5":653,"perc10":517,"perc0n":2287,"weekday":"4","weekday_showname":"星期三","perc5n":1103,"perc10n":586},{"perc3n":991,"perc0":1746,"perc3":732,"perc5":827,"perc10":540,"perc0n":2019,"weekday":"5","weekday_showname":"星期四","perc5n":1112,"perc10n":486},{"perc3n":1080,"perc0":1906,"perc3":614,"perc5":640,"perc10":586,"perc0n":2414,"weekday":"6","weekday_showname":"星期五","perc5n":894,"perc10n":382},{"perc3n":849,"perc0":2189,"perc3":759,"perc5":700,"perc10":505,"perc0n":2370,"weekday":"7","weekday_showname":"星期六","perc5n":918,"perc10n":237}],
+              data: [{"perc3n":809,"perc0":2304,"perc3":707,"perc5":716,"perc10":496,"perc0n":2412,"weekday":"1","weekday_showname":"星期天","perc5n":864,"perc10n":234},{"perc3n":1194,"perc0":1529,"perc3":598,"perc5":711,"perc10":518,"perc0n":2200,"weekday":"2","weekday_showname":"星期一","perc5n":1262,"perc10n":515},{"perc3n":931,"perc0":1783,"perc3":636,"perc5":718,"perc10":485,"perc0n":2215,"weekday":"3","weekday_showname":"星期二","perc5n":1303,"perc10n":502},{"perc3n":1025,"perc0":1769,"perc3":652,"perc5":654,"perc10":517,"perc0n":2316,"weekday":"4","weekday_showname":"星期三","perc5n":1103,"perc10n":586},{"perc3n":991,"perc0":1746,"perc3":732,"perc5":827,"perc10":540,"perc0n":2019,"weekday":"5","weekday_showname":"星期四","perc5n":1112,"perc10n":486},{"perc3n":1080,"perc0":1906,"perc3":614,"perc5":640,"perc10":586,"perc0n":2414,"weekday":"6","weekday_showname":"星期五","perc5n":894,"perc10n":382},{"perc3n":849,"perc0":2189,"perc3":759,"perc5":700,"perc10":505,"perc0n":2370,"weekday":"7","weekday_showname":"星期六","perc5n":918,"perc10n":237}],
               columns: [
                   {data: 'weekday'},
                   {data: 'weekday_showname'},
@@ -96,7 +96,7 @@
 
           var line = new RGraph.Bar({
               id: 'cvs',
-              data: [[496,518,485,517,540,586,505,],[716,711,718,653,827,640,700,],[707,598,636,657,732,614,759,],[2304,1529,1783,1791,1746,1906,2189,],[2412,2200,2215,2289,2019,2414,2370,],[809,1194,931,1023,991,1080,849,],[864,1262,1303,1103,1112,894,918,],[234,515,502,586,486,382,237,]],
+              data: [[496,518,485,517,540,586,505,],[716,711,718,653,827,640,700,],[707,598,636,652,732,614,759,],[2304,1529,1783,1767,1746,1906,2189,],[2412,2200,2215,2318,2019,2414,2370,],[809,1194,931,1025,991,1080,849,],[864,1262,1303,1103,1112,894,918,],[234,515,502,586,486,382,237,]],
               options: {
                   labels: labels_str,
                   textAngle: 0,
@@ -129,4 +129,4 @@
                                              style="border-width:0" /></a></noscript>
   </body>
 </html>
-<br><br><br><br>Refresh Time：2018-12-26 15:22:03
+<br><br><br><br>Refresh Time：2018-12-26 15:46:13
